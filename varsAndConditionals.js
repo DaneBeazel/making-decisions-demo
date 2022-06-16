@@ -26,19 +26,18 @@ if(kenobiHealth > anakinAttack){
 }
 
 kenobiDefense += 25
+let damage = anakinAttack - kenobiDefense
 
 for(let i = 0; i < 5; i++){
-    let damage = anakinAttack - kenobiDefense
     kenobiHealth -= damage
     console.log(`Kenobi's health is now ${kenobiHealth}`)
 }
 
 while(kenobiHealth > 0){
-    let damage = anakinAttack - kenobiDefense
     kenobiHealth -= damage
 
     if(kenobiHealth > 0){
-        console.log(`kenobi's health is no ${kenobiHealth}`)
+        console.log(`kenobi's health is now ${kenobiHealth}`)
     } else {
         console.log('kenobi has been slain')
     }
